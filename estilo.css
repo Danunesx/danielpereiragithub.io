@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+2&display=swap');
+
+html, body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.titlefont{
+    font-family: 'Baloo 2', cursive;
+}
+
+.textfont{
+    font-family: 'Amaranth', sans-serif;
+}
+
+.bluebackground{
+    background-color: rgb(0, 89, 255);
+}
+
+body{
+    background-color: rgb(0, 89, 255);
+}
+
+header{
+    background-color: rgb(0, 89, 255);
+}
+
+#logo{
+    font-size: 15pt;
+    font-weight: bold
+}
+
+nav{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Baloo 2', cursive;
+}
+
+nav a{
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    padding: 0 50px 10px 0;
+    font-size: 13pt;
+    position: relative;
+}
+
+nav a#line::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+nav a#line:hover::after{
+    width: 55%;
+}
