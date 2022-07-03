@@ -29,16 +29,17 @@
         </header>
         <section>
             <div class="containerleft">
-                <h1 id="maintitle" class="titlefont">Relaxaaa!<br>Eu cuido de toda<br>a sua marca!</h1>
-                <p id="subtitle" class="textfont">O design que você merece!</p>
+                <h1 id="maintitle" data-rellax-speed="-1" class="titlefont rellax">Relaxaaa!<br>Eu cuido de toda<br>a sua marca!</h1>
+                <p id="subtitle" data-rellax-speed="-2" class="textfont rellax">O design que você merece!</p>
+                <img id="seta" data-rellax-speed="-1.8" class="rellax" src="img/seta.png">
             </div>
             <div >
-                <img id="mainimg" src="img/5141097.png">
+                <img id="mainimg" class="rellax" data-rellax-speed="-1.4" src="img/5141097.png">
             </div>
         </section>
         <section id="Serviços" class="blackbackground">
             <h1 id="teste2"class="titlefont">Serviços</h1>
-            <h1 id="teste" class="textfont">Serviços</h1>
+            <h1 id="teste" data-rellax-speed="2" class="textfont rellax">Serviços</h1>
         <div class="container">
             <div class="box">
             </div>
@@ -52,7 +53,7 @@
         </section>
         <section id="Portifolio" class="blackbackground">
             <h1 id="teste2"class="titlefont">Portifólio</h1>
-            <h1 id="teste" class="textfont">Portifólio</h1>
+            <h1 id="teste"  data-rellax-speed="1" class="textfont rellax">Portifólio</h1>
         <div class="container2">
             <div class="box">
             </div>
@@ -61,6 +62,7 @@
         </div>
         <div class="container3">
             <div class="box">
+                <a href=""><img src="img/img1.jpg"></a>
             </div>
             <div class="box">
             </div>
@@ -76,6 +78,13 @@
         <section id="Clientes" class="bluebackground">
             <h1 id="teste2"class="titlefont">Clientes</h1>
         </section>
+        <section id="Sobre" class="bluebackground">
+            <h1 id="teste2"class="titlefont">Sobre mim</h1>
+        </section>
+
+        <footer>
+           
+        </footer>
         
         <script>
             window.addEventListener('scroll', function () {
@@ -83,6 +92,11 @@
                 let windowPosition = window.scrollY > 0;
                 header.classList.toggle('scrolling-active', windowPosition);
             })
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax');
         </script>
     </body>
 </html>

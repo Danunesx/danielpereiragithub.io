@@ -28,6 +28,7 @@ body{
 #mainimg{
     width: 60%;
 }
+
 .containerleft {
     float: left;
     padding: 15% 0 20% 15.43%;
@@ -117,7 +118,7 @@ body{
     width: 100%;
     padding: 0 10% 1.5% 10%;
     box-sizing: border-box;
-    height: 60vh;
+    height: 55vh;
     position: relative;
     transform: translateY(-320px);
 }
@@ -127,3 +128,42 @@ body{
     padding-top: 3%;
     max-height: 68vw;
 }
+
+.box img{
+    width: 100%;
+}
+
+.container3 .box, .container2 .box{
+   border: 0px;
+   background-color: #dadada;
+   text-align: center;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #dadada #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #dadada;
+    border-radius: 8px;
+    border: 4px solid #ffffff;
+  }
+
+#seta{
+    width: 16%;
+    transform: translateX(-10px);
+    padding-top: 40%;
+}
+
