@@ -7,11 +7,13 @@
         <meta http-equiv="content-language" content="pt-br">
         <meta name="description" content="Relaxaaa, eu cuido do seu desing.">
         <meta name="keywords" content="Designer grafico, design, identidade visual, social media, web design">
-        <title> Daniel Pereira Dsgn </title>
+        <title> danielpereiradsgn </title>
         <link rel="shortcut icon" href="img/flaticon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+2&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
         <link href="estilo.css" rel="stylesheet"/>
         <link href="header.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +23,10 @@
             <nav>
                 <a id="logo" href=""><img src="">danielpereira</a>
                 <a id="line" href="">Home</a>
-                <a id="line" href="">Serviços</a>
-                <a id="line" href="">Portifólio</a>
-                <a id="line" href="">Sobre</a>
-                <a id="line" href="">Contato</a>
+                <a id="line" href="#Serviços">Serviços</a>
+                <a id="line" href="#Portifolio">Portifólio</a>
+                <a id="line" href="#Sobre">Sobre</a>
+                <a id="line" href="#Contato">Contato</a>
             </nav>
         </header>
         <section>
@@ -42,12 +44,44 @@
             <h1 id="teste" data-rellax-speed="2" class="textfont rellax">Serviços</h1>
         <div class="container">
             <div class="box">
+                <div id="imgbox">
+                    <img src="img/rocket.png">
+                </div>
+                <div id="boxtext">
+                    <h class="titlefont">Identidade Visual</h>
+                    <p class="textfont">Crie ou redesenhe sua<br>marca do seu jeito.</p>
+                    <a id="line" class="titlefont" href="">Eu quero!</a>
+                </div>
             </div>
             <div class="box">
+                <div id="imgbox">
+                    <img src="img/alvo.png">
+                </div>
+                <div id="boxtext">
+                    <h class="titlefont">Social Media</h>
+                    <p class="textfont">Publicidade que<br>aumenta suas vendas.</p>
+                    <a class="titlefont" href="">Eu quero!</a>
+                </div>
             </div>
             <div class="box">
+                <div id="imgbox" class="img1">
+                    <img src="img/megaphon.png">
+                </div>
+                <div id="boxtext">
+                    <h class="titlefont">Edição de vídeos</h>
+                    <p class="textfont">Edite vídeos pessoal<br>e para sua empresa.</p>
+                    <a class="titlefont" href="">Eu quero!</a>
+                </div>
             </div>
             <div class="box">
+                <div id="imgbox" class="img1">
+                    <img src="img/web.png">
+                </div>
+                <div id="boxtext">
+                    <h class="titlefont">Website</h>
+                    <p class="textfont">Conecte-se por todo mundo<br> seja reconhecido.</p>
+                    <a class="titlefont" href="">Eu quero!</a>
+                </div>
             </div>
         </div>
         </section>
@@ -65,18 +99,43 @@
                 <a href=""><img src="img/img1.jpg"></a>
             </div>
             <div class="box">
+                <a href=""><img src="img/banner2.jpeg"></a>
             </div>
+            <div class="box">
+                <a href=""><img class="avental" src="img/avental.png"></a>
+            </div>
+            <div class="box">
+                <a href=""><img class="card" src="img/Cartão de Visita.png"></a>
+            </div>
+        </div>
+        </section>
+        <section id="Depoimentos" class="bluebackground">
+            <h1 id="teste2"class="titlefont">Depoimentos</h1>
+            <div class="container4">
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+        </div>
+        <div class="container4">
             <div class="box">
             </div>
             <div class="box">
             </div>
         </div>
         </section>
-        <section id="Depoimentos" class="bluebackground">
-            <h1 id="teste2"class="titlefont">Depoimentos</h1>
-        </section>
         <section id="Clientes" class="bluebackground">
             <h1 id="teste2"class="titlefont">Clientes</h1>
+            <div class="logo-container">
+                <div class="logo-slider">
+                    <div class="item"><img src="img/logo-suzano-branco.png"></div>
+                    <div class="item"><img src="img/logo principal negativo.png"></div>
+                    <div class="item"><img src="img/isabelle.png"></div>
+                    <div class="item"><img src="img/yume.png"></div>
+                    <div class="item"><img src="img/iracema.png"></div>
+                    <div class="item"><img src="img/podetoner.png"></div>
+                </div>
+            </div>
         </section>
         <section id="Sobre" class="bluebackground">
             <h1 id="teste2"class="titlefont">Sobre mim</h1>
@@ -97,6 +156,37 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
         <script>
             var rellax = new Rellax('.rellax');
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            $('.logo-slider').slick({
+            centerMode: true,
+            centerPadding: '120px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 650,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+            });
+
         </script>
     </body>
 </html>

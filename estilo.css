@@ -5,6 +5,11 @@ html, body {
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+    color: #dadada;
+}
+
 .titlefont{
     font-family: 'Baloo 2', cursive;
 }
@@ -92,7 +97,6 @@ body{
     overflow: hidden;
     margin: 0 1%;
     box-shadow: 0 20px 30px rgba(0,0,0,.1);
-    line-height: 0;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.39);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -100,6 +104,35 @@ body{
     -webkit-backdrop-filter: blur(6.2px);
     border: 1px solid rgba(255, 255, 255, 0.69);
     
+}
+#imgbox{
+    padding: 20px;
+    height: 60%;
+    transform: translateX(10px);
+    width: 75%;
+    text-align: center;
+}
+
+#boxtext{
+    color: #dadada;
+    text-align: center;
+}
+
+.box h{
+    font-weight: 600;
+    font-size: 15pt;
+    letter-spacing: 0.6pt;
+}
+.box p{
+    line-height: 12pt;
+}
+.box a{
+    font-weight: 600;
+}
+
+#imgbox.img1{
+    width: 83%;
+    transform: translateY(35px);
 }
 
 .container2 {
@@ -138,6 +171,18 @@ body{
    background-color: #dadada;
    text-align: center;
 }
+.container3 .box img{
+    width: 110%;
+    transform: translateX(-15px);
+}
+.container3 .box img.avental{
+    width: 140%;
+    transform: translateX(-50px);
+}
+.container3 .box img.card{
+    width: 190%;
+    transform: translateX(-90px);
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -167,3 +212,23 @@ body{
     padding-top: 40%;
 }
 
+.logo-container{
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 3% 0%;
+}
+
+.item img{
+    width: 70%;
+    transform: translateX(22%);
+}
+
+.container4 {
+    display: flex;
+    width: 80%;
+    padding: 0 10% 1% 10%;
+    box-sizing: border-box;
+    height: 40vh;
+    position: relative;
+    text-align: center;
+}
