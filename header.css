@@ -1,0 +1,57 @@
+
+header{
+    background-color: #0064FB;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+#logo{
+    font-size: 15pt;
+    font-weight: bold
+}
+
+nav{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Baloo 2', cursive;
+}
+
+nav a{
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    padding: 0 50px 10px 0;
+    font-size: 13pt;
+    position: relative;
+}
+
+nav a#line::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+nav a#line:hover::after{
+    width: 55%;
+}
+
+.scrolling-active{
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    transform: translateY(-25px);
+    padding-bottom: 15px;
+}
+
+.scrolling-active .nav{
+    height: 6.6rem;
+}
+
+.scrolling-active .nav a{
+    color: #313131;
+}

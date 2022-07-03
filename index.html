@@ -8,17 +8,18 @@
         <meta name="description" content="Relaxaaa, eu cuido do seu desing.">
         <meta name="keywords" content="Designer grafico, design, identidade visual, social media, web design">
         <title> Daniel Pereira Dsgn </title>
-        <link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="img/flaticon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+2&display=swap" rel="stylesheet">
         <link href="estilo.css" rel="stylesheet"/>
+        <link href="header.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             <nav>
-                <a id="logo" href="">danielpereira</a>
+                <a id="logo" href=""><img src="">danielpereira</a>
                 <a id="line" href="">Home</a>
                 <a id="line" href="">Serviços</a>
                 <a id="line" href="">Portifólio</a>
@@ -26,6 +27,62 @@
                 <a id="line" href="">Contato</a>
             </nav>
         </header>
-
+        <section>
+            <div class="containerleft">
+                <h1 id="maintitle" class="titlefont">Relaxaaa!<br>Eu cuido de toda<br>a sua marca!</h1>
+                <p id="subtitle" class="textfont">O design que você merece!</p>
+            </div>
+            <div >
+                <img id="mainimg" src="img/5141097.png">
+            </div>
+        </section>
+        <section id="Serviços" class="blackbackground">
+            <h1 id="teste2"class="titlefont">Serviços</h1>
+            <h1 id="teste" class="textfont">Serviços</h1>
+        <div class="container">
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+        </div>
+        </section>
+        <section id="Portifolio" class="blackbackground">
+            <h1 id="teste2"class="titlefont">Portifólio</h1>
+            <h1 id="teste" class="textfont">Portifólio</h1>
+        <div class="container2">
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+        </div>
+        <div class="container3">
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+        </div>
+        </section>
+        <section id="Depoimentos" class="bluebackground">
+            <h1 id="teste2"class="titlefont">Depoimentos</h1>
+        </section>
+        <section id="Clientes" class="bluebackground">
+            <h1 id="teste2"class="titlefont">Clientes</h1>
+        </section>
+        
+        <script>
+            window.addEventListener('scroll', function () {
+                let header = document.querySelector('header');
+                let windowPosition = window.scrollY > 0;
+                header.classList.toggle('scrolling-active', windowPosition);
+            })
+        </script>
     </body>
 </html>

@@ -14,48 +14,116 @@ html, body {
 }
 
 .bluebackground{
-    background-color: rgb(0, 89, 255);
+    background-color: #0064FB;
+}
+.blackbackground{
+    background-color: #000c1f;
+    background-size: 150%;
 }
 
 body{
-    background-color: rgb(0, 89, 255);
+    background-color: #0064FB;
 }
 
-header{
-    background-color: rgb(0, 89, 255);
+#mainimg{
+    width: 60%;
 }
-
-#logo{
-    font-size: 15pt;
-    font-weight: bold
-}
-
-nav{
-    text-align: center;
-    margin-top: 40px;
-    font-family: 'Baloo 2', cursive;
-}
-
-nav a{
-    color: rgb(238, 238, 238);
-    text-decoration: none;
-    padding: 0 50px 10px 0;
-    font-size: 13pt;
+.containerleft {
+    float: left;
+    padding: 15% 0 20% 15.43%;
     position: relative;
+    color: aliceblue;
 }
 
-nav a#line::after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: aliceblue;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    border-radius: 100%;
-    transition: 0.3s ease-in-out;
+#maintitle {
+    margin-bottom: 0;
+    font-size: 35pt;
+    line-height: 0.95;
 }
 
-nav a#line:hover::after{
-    width: 55%;
+#subtitle {
+    margin-top: 0;
+    font-size: 16pt;
+}
+#Serviços{
+    width: 100%;
+    padding-top: 3%;
+    max-height: 50vw;
+}
+#teste{
+    text-align: center;
+    font-size: 220pt;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: bold;
+    transform: translateY(-180px);
+    background: #00183F;
+    background: linear-gradient(to right, #00183F 0%, #000C1F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#teste2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30pt;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 0 10% 4% 10%;
+    box-sizing: border-box;
+    height: 80vh;
+    position: relative;
+    transform: translateY(-320px);
+}
+
+.horizontal{
+    height: 50vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    margin: 0 1%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.39);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.69);
+    
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    padding: 0 10% 1.5% 10%;
+    box-sizing: border-box;
+    height: 50vh;
+    position: relative;
+    transform: translateY(-320px);
+}
+
+
+.container3 {
+    display: flex;
+    width: 100%;
+    padding: 0 10% 1.5% 10%;
+    box-sizing: border-box;
+    height: 60vh;
+    position: relative;
+    transform: translateY(-320px);
+}
+
+#Portifolio{
+    width: 100%;
+    padding-top: 3%;
+    max-height: 68vw;
 }
