@@ -19,8 +19,6 @@ nav{
 }
 
 nav a{
-    color: rgb(238, 238, 238);
-    text-decoration: none;
     padding: 0 50px 10px 0;
     font-size: 13pt;
     position: relative;
@@ -30,7 +28,7 @@ nav a#line::after{
     content: " ";
     width: 0%;
     height: 2px;
-    background-color: aliceblue;
+    background-color: #F5F5F5;
     position: absolute;
     bottom: 10px;
     left: 0;

@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+2&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="estilo.css" rel="stylesheet"/>
         <link href="header.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,111 +22,121 @@
     <body>
         <header>
             <nav>
-                <a id="logo" href=""><img src="">danielpereira</a>
-                <a id="line" href="">Home</a>
+                <a id="logo" href="#Home"><img src="">danielpereira</a>
+                <a id="line" href="#Home">Home</a>
                 <a id="line" href="#Serviços">Serviços</a>
                 <a id="line" href="#Portifolio">Portifólio</a>
                 <a id="line" href="#Sobre">Sobre</a>
                 <a id="line" href="#Contato">Contato</a>
             </nav>
         </header>
-        <section>
+
+        <!--MAIN PAGE-->
+        <section id="Home">
             <div class="containerleft">
-                <h1 id="maintitle" data-rellax-speed="-1" class="titlefont rellax">Relaxaaa!<br>Eu cuido de toda<br>a sua marca!</h1>
-                <p id="subtitle" data-rellax-speed="-2" class="textfont rellax">O design que você merece!</p>
+                <h1 id="maintitle" data-rellax-speed="-1" class="rellax">Relaxaaa!<br>Eu cuido de toda<br>a sua marca!</h1>
+                <p id="subtitle" data-rellax-speed="-2" class="rellax">O design que você merece!</p>
                 <img id="seta" data-rellax-speed="-1.8" class="rellax" src="img/seta.png">
             </div>
-            <div >
-                <img id="mainimg" class="rellax" data-rellax-speed="-1.4" src="img/5141097.png">
+            <div>
+                <img id="mainimg" class="rellax" data-rellax-speed="-1.5" src="img/5141097.png">
             </div>
         </section>
+        
+        <!--SERVIÇOS-->
         <section id="Serviços" class="blackbackground">
-            <h1 id="teste2"class="titlefont">Serviços</h1>
-            <h1 id="teste" data-rellax-speed="2" class="textfont rellax">Serviços</h1>
-        <div class="container">
-            <div class="box">
-                <div id="imgbox">
-                    <img src="img/rocket.png">
+            <h1 class="titulo">Serviços</h1>
+            <h1 data-rellax-speed="2" class="titulofundo rellax">Serviços</h1>
+            <div class="container">
+                <div class="box">
+                    <div id="imgbox">
+                        <img src="img/rocket.png">
+                    </div>
+                    <div>
+                        <h>Identidade Visual</h>
+                        <p>Crie ou redesenhe sua<br>marca do seu jeito.</p>
+                        <a id="line" href="">Eu quero!</a>
+                    </div>
                 </div>
-                <div id="boxtext">
-                    <h class="titlefont">Identidade Visual</h>
-                    <p class="textfont">Crie ou redesenhe sua<br>marca do seu jeito.</p>
-                    <a id="line" class="titlefont" href="">Eu quero!</a>
+                <div class="box">
+                    <div id="imgbox">
+                        <img src="img/alvo.png">
+                    </div>
+                    <div>
+                        <h>Social Media</h>
+                        <p >Publicidade que<br>aumenta suas vendas.</p>
+                        <a href="">Eu quero!</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="imgbox" class="img1">
+                        <img src="img/megaphon.png">
+                    </div>
+                    <div>
+                        <h>Edição de vídeos</h>
+                        <p>Edite vídeos pessoal<br>e para sua empresa.</p>
+                        <a href="">Eu quero!</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div id="imgbox" class="img1">
+                        <img src="img/web.png">
+                    </div>
+                    <div>
+                        <h>Website</h>
+                        <p>Conecte-se por todo mundo<br> seja reconhecido.</p>
+                        <a href="">Eu quero!</a>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div id="imgbox">
-                    <img src="img/alvo.png">
-                </div>
-                <div id="boxtext">
-                    <h class="titlefont">Social Media</h>
-                    <p class="textfont">Publicidade que<br>aumenta suas vendas.</p>
-                    <a class="titlefont" href="">Eu quero!</a>
-                </div>
-            </div>
-            <div class="box">
-                <div id="imgbox" class="img1">
-                    <img src="img/megaphon.png">
-                </div>
-                <div id="boxtext">
-                    <h class="titlefont">Edição de vídeos</h>
-                    <p class="textfont">Edite vídeos pessoal<br>e para sua empresa.</p>
-                    <a class="titlefont" href="">Eu quero!</a>
-                </div>
-            </div>
-            <div class="box">
-                <div id="imgbox" class="img1">
-                    <img src="img/web.png">
-                </div>
-                <div id="boxtext">
-                    <h class="titlefont">Website</h>
-                    <p class="textfont">Conecte-se por todo mundo<br> seja reconhecido.</p>
-                    <a class="titlefont" href="">Eu quero!</a>
-                </div>
-            </div>
-        </div>
         </section>
+
+        <!--PORTIFÓLIO-->
         <section id="Portifolio" class="blackbackground">
-            <h1 id="teste2"class="titlefont">Portifólio</h1>
-            <h1 id="teste"  data-rellax-speed="1" class="textfont rellax">Portifólio</h1>
-        <div class="container2">
-            <div class="box">
+            <h1 class="titulo">Portifólio</h1>
+            <h1 data-rellax-speed="1" class="titulofundo rellax">Portifólio</h1>
+            <div class="container two">
+                <div class="box">
+                </div>
+                <div class="box">
+                </div>
             </div>
-            <div class="box">
+            <div class="container two three">
+                <div class="box">
+                    <a href=""><img src="img/img1.jpg"></a>
+                </div>
+                <div class="box">
+                    <a href=""><img src="img/banner2.jpeg"></a>
+                </div>
+                <div class="box">
+                    <a href=""><img class="avental" src="img/avental.png"></a>
+                </div>
+                <div class="box">
+                    <a href=""><img class="card" src="img/Cartão de Visita.png"></a>
+                </div>
             </div>
-        </div>
-        <div class="container3">
-            <div class="box">
-                <a href=""><img src="img/img1.jpg"></a>
-            </div>
-            <div class="box">
-                <a href=""><img src="img/banner2.jpeg"></a>
-            </div>
-            <div class="box">
-                <a href=""><img class="avental" src="img/avental.png"></a>
-            </div>
-            <div class="box">
-                <a href=""><img class="card" src="img/Cartão de Visita.png"></a>
-            </div>
-        </div>
         </section>
+
+        <!--DEPOIMENTOS-->
         <section id="Depoimentos" class="bluebackground">
-            <h1 id="teste2"class="titlefont">Depoimentos</h1>
-            <div class="container4">
-            <div class="box">
+            <h1 class="titulo">Depoimentos</h1>
+            <div class="content">
+                <div class="box">
+                </div>
+                <div class="box">
+                </div>
             </div>
-            <div class="box">
+            <div class="content">
+                <div class="box">
+                </div>
+                <div class="box">
+                </div>
             </div>
-        </div>
-        <div class="container4">
-            <div class="box">
-            </div>
-            <div class="box">
-            </div>
-        </div>
         </section>
+
+        <!--CLIENTES-->
         <section id="Clientes" class="bluebackground">
-            <h1 id="teste2"class="titlefont">Clientes</h1>
+            <h1 class="titulo">Clientes</h1>
             <div class="logo-container">
                 <div class="logo-slider">
                     <div class="item"><img src="img/logo-suzano-branco.png"></div>
@@ -134,17 +145,57 @@
                     <div class="item"><img src="img/yume.png"></div>
                     <div class="item"><img src="img/iracema.png"></div>
                     <div class="item"><img src="img/podetoner.png"></div>
+                    <div class="item"><img src="img/logo em elipse.png"></div>
                 </div>
             </div>
         </section>
+
+        <!--SOBRE-->
         <section id="Sobre" class="bluebackground">
-            <h1 id="teste2"class="titlefont">Sobre mim</h1>
+            <h1 class="titulo">Sobre mim</h1>
+        </section>
+
+        <!--CONTATO-->
+        <section id="Contato" class="blackbackground">"
+            <h1 class="titulo">Contato</h1>
+            <div>
+                <img src="">
+            </div>
+            <div>
+                <h1 id="maintitle">Relaxouu?<br>Faça o seu<br>orçamento! :)</h1>
+                <p id="subtitle">dannunescontato@gmail.com</p>
+                <p id="subtitle">via<a href=""> Whatsapp</a></p>
+            </div>
         </section>
 
         <footer>
-           
+           <section>
+                <div class="footerbox logos">
+                    <a id="logo" href=""><img src="">danielpereira</a>
+                </div>
+                <div class="footerbox links">
+                    <a href="#Home">Home</a>
+                    <a href="#Serviços">Serviços</a>
+                    <a href="#Portifolio">Portifólio</a>
+                    <a href="#Depoimentos">Depoimentos</a>
+                </div>
+                <div class="footerbox links">
+                    <a href="#Clientes">Clientes</a>
+                    <a href="#Sobre mim">Sobre</a>
+                    <a href="#Contato">Contato</a>
+                </div>
+                <div class="footerbox logos">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="#" class="fa fa-behance"></a>
+                    <a href="#" class="fa fa-github"></a>
+                </div>
+           </section>
         </footer>
+        <p class="all">Todos os direitos reservados | 2022</p>
         
+        <!--SCRIPTS-->
         <script>
             window.addEventListener('scroll', function () {
                 let header = document.querySelector('header');
@@ -152,12 +203,10 @@
                 header.classList.toggle('scrolling-active', windowPosition);
             })
         </script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
         <script>
             var rellax = new Rellax('.rellax');
         </script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script>
@@ -186,7 +235,7 @@
                 }
             ]
             });
-
         </script>
+
     </body>
 </html>
