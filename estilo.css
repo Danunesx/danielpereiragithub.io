@@ -17,6 +17,7 @@ a, h, h1{
 
 p{
     font-family: 'Amaranth', sans-serif;
+    letter-spacing: 0.3pt;
 }
 
 section{
@@ -167,6 +168,13 @@ section{
 }
 
 /* DEPOIMENTOS */
+#Depoimentos{
+    max-height: 45vw;
+}
+
+.abs{
+    padding-top: 2%;
+}
 .content {
     display: flex;
     width: 80%;
@@ -175,9 +183,19 @@ section{
     height: 40vh;
     position: relative;
     text-align: center;
+    z-index: 1;
+}
+
+.heart{
+    width: 30%;
+    transform: translate3d(220%, -135%, 0);
 }
 
 /* CLIENTES */
+#Clientes{
+    padding-bottom: 7%;
+}
+
 .logo-container{
     max-width: 880px;
     margin: 0 auto;
@@ -189,9 +207,62 @@ section{
     transform: translateX(22%);
 }
 
+/* SOBRE */
+#Sobre{
+    max-height: 48vw;
+}
+
+.content.five {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+    height: 70vh;
+    z-index: 1;
+}
+
+.box.x{
+    background-color: #0064FB;
+    border: 0;
+    box-shadow: none;
+}
+
+.content.five p, .content.five h1{
+    padding: 0% 5%;
+    text-align: left;
+    line-height: 15pt;
+    font-size: 11pt;
+}
+
+
+.trophy{
+    width: 40%;
+    transform: translate3d(5%, -80%, 0);
+}
+
 /* CONTATO */
 #Contato{
+    padding: 0 10% 5% 10% ;
+}
+
+.containercontact h1, .containercontact p{
     text-align: right;
+    transform: translateY(-100px);
+    padding-left: 10%;
+}
+
+.boxtext{
+    transform: translateX(150px);
+}
+
+.containercontact{
+    width: 40%;
+    display: inline-block;
+}
+
+.containercontact img{
+    width: 150%;
+    padding-top: 5%;
+    transform: translateY(-100%);
 }
 
 /* FOOTER */
