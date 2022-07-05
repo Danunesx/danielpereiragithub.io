@@ -24,6 +24,58 @@ section{
     padding-top: 3%;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* MAIN PAGE */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 800px; limita o tamanho do container */ 
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.flex > div, .flex.service > div, .flex.jobs > div{
+    flex: 1 1 200px;
+}
+
+.flex.service > div, .flex.jobs > div{
+   margin: 10px;
+}
+
+/* SERVICE */
+.service, .jobs{
+    max-width: 1060px; 
+}
+
+.flexbox{
+    background-color: aqua;
+    height: 450px;
+    border-radius: 25px;
+}
+
+/* JOBS */
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1040px; 
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.grid .flexbox{
+    height: 250px;
+}
+
+.jobs .flexbox{
+    height: 350px;
+}
+
 .containerleft {
     float: left;
     padding: 15% 0% 20% 15.43%;
