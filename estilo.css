@@ -46,19 +46,42 @@ img{
    margin: 10px;
 }
 
+.main{
+    padding-top: 10%;
+    text-align: left;
+}
+
+.item-text.main{
+    padding-top: 8%;
+    margin: 0 0 0 15%;
+    text-align: left;
+
+}
+#seta{
+    width: 10%;
+    padding-top: 14%;
+}
+
 /* SERVICE */
 .service, .jobs{
     max-width: 1060px; 
 }
 
 .flexbox{
-    background-color: aqua;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     height: 450px;
     border-radius: 25px;
 }
 
 /* JOBS */
-
+section.flex.jobs{
+    padding-top: 10px;
+}
 
 .grid{
     display: grid;
@@ -76,13 +99,53 @@ img{
     height: 350px;
 }
 
+.buttom{
+    text-align: center;
+    padding: 2%;
+    font-size: 20pt;
+}
+
+.heart{
+    width: 30%;
+    transform: translate3d(220%, -135%, 0);
+    position: absolute;
+}
+
+/* ABOUT ME */
+.grid.about-me{
+    max-width: 720px;
+}
+
+.grid.about-me > .flexbox{
+    height: 480px;
+}
+
+.flexbox.-text{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    border: none;
+}
+
+/* CONTACT */
+.item-text{
+    text-align: right;
+    font-size: 25pt;
+    line-height: 35pt;
+    margin-right: 15%;
+}
+
+.item-img{
+    margin-left: 10%;
+}
+
+
+/* PAGINA INICIAL */
 .containerleft {
     float: left;
     padding: 15% 0% 20% 15.43%;
     position: relative;
 }
 
-/* PAGINA INICIAL */
 #maintitle {
     margin-bottom: 0;
     font-size: 35pt;
@@ -94,16 +157,12 @@ img{
     font-size: 16pt;
 }
 
-#seta{
-    width: 16%;
-    padding-top: 40%;
-}
-
 #mainimg{
     width: 60%;
 }
 
 /* SERVIÇOS */
+
 .bluebackground{
     background-color: #0064FB;
 }
@@ -238,15 +297,7 @@ img{
     z-index: 1;
 }
 
-.heart{
-    width: 30%;
-    transform: translate3d(220%, -135%, 0);
-}
-
 /* CLIENTES */
-#Clientes{
-    padding-bottom: 7%;
-}
 
 .logo-container{
     max-width: 880px;
