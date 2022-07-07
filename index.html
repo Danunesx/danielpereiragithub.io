@@ -47,18 +47,38 @@
         <!--SERVICE-->
         <section id="Serviços">
             <h1 class="titulo">Serviços</h1>
-            <section class="flex service">
+            <section class="flex service" data-anime="top">
                 <div class="flexbox">
-                    <img class="rellax" data-rellax-speed="1" src="img/rocket.png">
+                    <div class="box-img">
+                        <img class="rellax" data-rellax-speed="1" src="img/rocket.png">
+                    </div>
+                    <h1>identidade Visual</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu purus.</p>
+                    <a href="https://www.behance.net/danielpereiradsgn" target="_blank">Veja mais</a>
                 </div>
                 <div class="flexbox">
-                    <img class="rellax" data-rellax-speed="0.7" src="img/alvo.png">
+                    <div class="box-img">
+                        <img class="rellax" data-rellax-speed="0.7" src="img/alvo.png">
+                    </div>
+                    <h1>Social Media</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu purus.</p>
+                    <a href="https://www.behance.net/danielpereiradsgn" target="_blank">Veja mais</a>
                 </div>
                 <div class="flexbox">
-                    <img class="rellax" data-rellax-speed="0.2" src="img/megaphon.png">
+                    <div class="box-img">
+                        <img class="rellax" data-rellax-speed="0.2" src="img/megaphon.png">
+                    </div>
+                    <h1>Edição de Vídeos</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu purus.</p>
+                    <a href="https://www.behance.net/danielpereiradsgn" target="_blank">Veja mais</a>
                 </div>
                 <div class="flexbox">
-                    <img class="rellax" data-rellax-speed="0.2" src="img/web.png">
+                    <div class="box-img">
+                        <img class="rellax" data-rellax-speed="0.2" src="img/web.png">
+                    </div>
+                    <h1>Web Design</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu purus.</p>
+                    <a href="https://www.behance.net/danielpereiradsgn" target="_blank">Veja mais</a>
                 </div>
             </section>
         </section>
@@ -109,10 +129,10 @@
         <section id="Sobre">
             <h1 class="titulo">Quem sou eu?</h1>
             <section class="grid about-me">
-                <div class="flexbox">
+                <div class="flexbox" data-anime="left">
                     <img src="img/.png">
                 </div>
-                <div class="flexbox -text">
+                <div class="flexbox -text" data-anime="right">
                     <h1>Olá, sou Daniel!</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu purus,
                         vulputate ac turpis in, molestie sagittis quam. In odio sem, scelerisque non magna ac,
@@ -187,6 +207,8 @@
         </footer>
 
         <!--SCRIPTS-->
+
+        <!--HEADER SCROLL-->
         <script>
             window.addEventListener('scroll', function () {
                 let header = document.querySelector('header');
@@ -194,12 +216,16 @@
                 header.classList.toggle('scrolling-active', windowPosition);
             })
         </script>
+        
+        <!--PARALLAX-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
         <script>
             var rellax = new Rellax('.rellax');
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        
+        <!--LOGO SLIDER-->
         <script>
             $('.logo-slider').slick({
             centerMode: true,
@@ -228,5 +254,44 @@
             });
         </script>
 
+        <!--FADE IN SCROLL-->
+        <script>
+            const debounce = function(func, wait, immediate) {
+            let timeout;
+            return function(...args) {
+                const context = this;
+                const later = function () {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+                };
+                const callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+            };
+
+            const target = document.querySelectorAll('[data-anime]');
+            const animationClass = 'animate';
+
+            function animeScroll() {
+            const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+            target.forEach(function(element) {
+                if((windowTop) > element.offsetTop) {
+                element.classList.add(animationClass);
+                } else {
+                element.classList.remove(animationClass);
+                }
+            })
+            }
+
+            animeScroll();
+
+            if(target.length) {
+            window.addEventListener('scroll', debounce(function() {
+                animeScroll();
+            }, 200));
+            }
+        </script>
     </body>
 </html>
