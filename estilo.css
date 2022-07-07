@@ -29,6 +29,14 @@ img{
     display: block;
 }
 
+#Serviços, #Portifólio, .Contato{
+    background-color: #001433;
+}
+
+#Serviços{
+    margin-top: 2%;
+}
+
 .titulo{
     text-align: center;
     font-size: 30pt;
@@ -109,13 +117,17 @@ section.flex.jobs{
 
 .buttom{
     text-align: center;
-    padding: 2%;
+    margin: 2% 0;
+}
+
+div.buttom > a{
     font-size: 20pt;
+    padding: 0 0 10px 0;
 }
 
 .heart{
     width: 30%;
-    transform: translate3d(220%, -135%, 0);
+    transform: translate3d(220%, -280%, 0);
     position: absolute;
 }
 
@@ -145,7 +157,6 @@ section.flex.jobs{
     width: 70%;
     transform: translateX(22%);
 }
-
 
 /* CONTACT */
 .item-text{
@@ -203,8 +214,7 @@ footer{
     text-align: center;
 }
 
-/*
-.titulofundo{
+.backtitle{
     font-family: 'Amaranth', sans-serif;
     text-align: center;
     font-size: 220pt;
@@ -218,7 +228,7 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-*/
+
   
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
