@@ -18,12 +18,28 @@ nav{
 }
 
 nav a{
-    padding: 0 50px 10px 0;
+    margin: 0 50px 10px 0;
+    padding: 0 0 10px 0;
     font-size: 13pt;
     position: relative;
 }
 
-nav a::after{
+a:not(.flex.footer > div > a, div.buttom > a){
+    padding: 0 0 10px 0;
+    font-size: 13pt;
+    position: relative;
+}
+
+div.buttom > a{
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+a:hover{
+    color: #e6e6e6;
+}
+
+nav a::after, a:not(.flex.footer > div > a)::after{
     content: " ";
     width: 0%;
     height: 2px;
@@ -35,8 +51,8 @@ nav a::after{
     transition: 0.3s ease-in-out;
 }
 
-nav a:hover::after{
-    width: 55%;
+nav a:hover::after, a:not(.flex.footer > div > a):hover::after{
+    width: 100%;
 }
 
 .scrolling-active{

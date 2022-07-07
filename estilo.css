@@ -20,7 +20,7 @@ p{
     letter-spacing: 0.3pt;
 }
 
-section{
+section:not(#Depoimentos, .flex){
     padding-top: 3%;
 }
 
@@ -29,8 +29,16 @@ img{
     display: block;
 }
 
-#Serviços, #Portifólio, .Contato{
+#Serviços, #Portifolio, #Contato{
     background-color: #001433;
+}
+
+#Contato{
+    padding: 2% 0 6% 0;
+}
+
+#Clientes {
+    padding-bottom: 5%;
 }
 
 #Serviços{
@@ -52,6 +60,7 @@ img{
     /* max-width: 800px; limita o tamanho do container */ 
     margin: 0 auto;
     padding-top: 5%;
+    align-items: center;
 }
 
 .flex > div, .flex.service > div, .flex.jobs > div{
@@ -65,17 +74,26 @@ img{
 .main{
     padding-top: 10%;
     text-align: left;
+    margin-top: 5%;
+}
+
+.item-text.main > p, .item-text > p{
+    font-size: 15pt;
+    margin: 0;
+}
+
+.item-text.main > h1, .item-text > h1{
+    margin: 0;
 }
 
 .item-text.main{
-    padding-top: 8%;
     margin: 0 0 0 15%;
     text-align: left;
 
 }
 #seta{
     width: 10%;
-    padding-top: 14%;
+    padding-top: 20%;
 }
 
 /* SERVICE */
@@ -93,6 +111,30 @@ img{
     height: 450px;
     border-radius: 25px;
 }
+
+.flex.jobs div:nth-child(n + 1){
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flex.jobs div:nth-child(1){
+    background-image: url("img/img1.jpg");
+}
+
+.flex.jobs div:nth-child(2){
+    background-image: url("img/banner2.jpeg");
+}
+
+.flex.jobs div:nth-child(3){
+    background-image: url("img/Cartão\ de\ Visita.png");
+}
+
+.flex.jobs div:nth-child(4){
+    background-image: url("img/avental.png");
+}
+
 
 /* JOBS */
 section.flex.jobs{
@@ -117,7 +159,7 @@ section.flex.jobs{
 
 .buttom{
     text-align: center;
-    margin: 2% 0;
+    padding: 2% 0 4% 0;
 }
 
 div.buttom > a{
@@ -159,6 +201,10 @@ div.buttom > a{
 }
 
 /* CONTACT */
+.flex > .item-img{
+    width: 450px;
+}
+
 .item-text{
     text-align: right;
     font-size: 25pt;
@@ -172,17 +218,24 @@ div.buttom > a{
 
 /* FOOTER */
 footer{
-    padding: 1% 10% 8% 10%;
+    padding: 0 0 2% 0;
+}
+
+.footer{
+    max-width: 1000px;
+}
+
+.flex.footer > div{
+    flex: 1 1 170px;
 }
 
 .footerbox{
     width: 20%;
     float: left;
-    padding-left: 5%;
 }
 
 .footerbox.links a{
-    padding-right: 30%;
+    padding-right: 100%;
 }
 
 .footerbox.logos {
@@ -211,9 +264,12 @@ footer{
 }
 
 .all{
+    margin-top: 2%;
     text-align: center;
+    width: 100%;
 }
 
+/*
 .backtitle{
     font-family: 'Amaranth', sans-serif;
     text-align: center;
@@ -228,26 +284,24 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+*/
   
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #dadada #ffffff;
-  }
+/* SCROLLBAR */
+* {
+scrollbar-width: auto;
+scrollbar-color: #dadada #ffffff;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 14px;
-  }
+*::-webkit-scrollbar {
+width: 14px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #dadada;
-    border-radius: 8px;
-    border: 4px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+background-color: #dadada;
+border-radius: 8px;
+border: 4px solid #ffffff;
+}
