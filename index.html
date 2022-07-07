@@ -10,6 +10,7 @@
         <title> danielpereiradsgn </title>
         <link rel="shortcut icon" href="img/flaticon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Baloo+2&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
@@ -50,7 +51,7 @@
             <section class="flex service" data-anime="top">
                 <div class="flexbox">
                     <div class="box-img">
-                        <img class="rellax" data-rellax-speed="1" src="img/rocket.png">
+                        <img class="rellax ajust" data-rellax-speed="0.3" src="img/rocket.png">
                     </div>
                     <h1>identidade Visual</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu purus.</p>
@@ -275,7 +276,7 @@
             const animationClass = 'animate';
 
             function animeScroll() {
-            const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+            const windowTop = window.pageYOffset + ((window.innerHeight * 0.75));
             target.forEach(function(element) {
                 if((windowTop) > element.offsetTop) {
                 element.classList.add(animationClass);

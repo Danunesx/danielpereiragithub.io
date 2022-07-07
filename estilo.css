@@ -16,7 +16,7 @@ a, h, h1{
 }
 
 p{
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Cabin', sans-serif;
     letter-spacing: 0.3pt;
 }
 
@@ -121,18 +121,23 @@ img{
     color: #0064FB;
 }
 
-.flexbox:not(div.flexbox > div.box-img > img){
-    padding: 2%;
-}
-
-div.flexbox > div.box-img > img{
-
+.flexbox a, .flexbox p, .flexbox h1 {
+    margin: 2% 8% 4% 8%;
 }
 
 .box-img{
-    padding: 1%;
-    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 3% 0 3%;
+    height: 60%;
 }
+
+.ajust{
+    width: 75%;
+    transform: translate3d(0px, -33px, 0px);
+}
+
 
 .flex.jobs div:nth-child(n + 1){
     background-size: cover;
@@ -257,7 +262,7 @@ footer{
 }
 
 .footerbox.links a{
-    padding-right: 100%;
+    padding-right: 50%;
 }
 
 .footerbox.logos {
@@ -330,7 +335,7 @@ border: 4px solid #ffffff;
 
 [data-anime]{
     opacity: 0;
-    transition: .7s;
+    transition: .5s;
 }
 
 [data-anime="left"]{
