@@ -1,0 +1,15 @@
+@media screen and (max-width: 610px){
+
+    .item-img > img {
+        max-width: 100%;
+    }
+
+    #Sobre p {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+
+}

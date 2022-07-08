@@ -243,6 +243,9 @@ div.buttom > a{
     margin-left: 10%;
 }
 
+.item-img > img{
+    max-width: 120%;
+}
 /* FOOTER */
 footer{
     padding: 0 0 2% 0;
