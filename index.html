@@ -22,14 +22,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <nav>
+        <header id="header">
+            <nav id="nav">
                 <a id="logo" href=""><img src="">danielpereira</a>
-                <a id="line" href="">Home</a>
-                <a id="line" href="#Serviços">Serviços</a>
-                <a id="line" href="#Portifolio">Portifólio</a>
-                <a id="line" href="#Sobre">Sobre</a>
-                <a id="line" href="#Contato">Contato</a>
+                <buttom aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="line" aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </buttom>
+                    <a id="line" href="">Home</a>
+                    <a id="line" href="#Serviços">Serviços</a>
+                    <a id="line" href="#Portifolio">Portifólio</a>
+                    <a id="line" href="#Sobre">Sobre</a>
+                    <a id="line" href="#Contato">Contato</a>
             </nav>
         </header>
 
@@ -293,6 +296,29 @@
                 animeScroll();
             }, 200));
             }
+        </script>
+
+        <script>
+            const btnMobile = document.getElementById('btn-mobile');
+
+            function toggleMenu(event) {
+                if (event.type === 'touchstart') event.preventDefaut()
+                const nav = document.getElementById('nav');
+                nav.classList.toggle('active');
+                const active = nav.classList.contains('active');
+                const header = document.getElementById('header');
+                header.classList.toggle('active1');
+                const active1 = nav.classList.contains('active1');
+                event.currentTarget.setAttribute('aria-expanded', active);
+                if (active) {
+                    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+                } else {
+                    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+                }
+            }
+
+            btnMobile.addEventListener('click', toggleMenu);
+            btnMobile.addEventListener('touchstart', toggleMenu);
         </script>
     </body>
 </html>
