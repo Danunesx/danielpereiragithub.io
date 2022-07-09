@@ -7,9 +7,19 @@
     #Sobre p {
         font-size: x-small;
     }
+
+    nav > a#line{
+        display: block;
+    }
+
+    a#line{
+        margin: 20px 0;
+    }
 }
 
-@media screen and (max-width: 600px){
-
+@media screen and (max-width: 400px){
+    .flex.service > div, .flex.jobs > div {
+        margin: 10px 35px;
+    }
 
 }

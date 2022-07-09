@@ -1,6 +1,7 @@
 html, body {
     margin: 0px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color: #0064FB;
@@ -211,6 +212,7 @@ div.buttom > a{
 
 .flexbox.-text{
     background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: none;
     box-shadow: none;
     border: none;
 }

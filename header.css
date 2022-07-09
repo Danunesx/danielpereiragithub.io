@@ -68,3 +68,8 @@ nav a:hover::after, a:not(.flex.footer > div > a):hover::after{
 .scrolling-active .nav a{
     color: #313131;
 }
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
