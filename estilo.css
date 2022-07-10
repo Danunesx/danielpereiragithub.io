@@ -21,7 +21,32 @@ p{
     letter-spacing: 0.3pt;
 }
 
-section:not(#Depoimentos, .flex){
+h4 {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    color: #0064FB;
+}
+
+#Depoimentos > h4, #Sobre > h4,  #Clientes > h4{
+    color: #001433;
+}
+
+div.item-text.main > a.mainbuttom{
+    font-weight: bold;
+    margin-top: 0;
+    background-color: #001433;
+    padding: 5px 10px;
+    border-radius: 40px;
+    transition: all .5s;
+}
+
+div.item-text.main > a.mainbuttom:hover{
+    color: #0064FB;
+    background-color: #F5F5F5;
+}
+
+section:not(.flex){
     padding-top: 3%;
 }
 
@@ -49,7 +74,7 @@ img{
 .titulo{
     text-align: center;
     font-size: 30pt;
-    margin-bottom: 0;
+    margin: 0;
     position: relative;
     z-index: 1;
 }

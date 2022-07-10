@@ -39,7 +39,7 @@ a:hover{
     color: #e6e6e6;
 }
 
-nav a::after, a:not(.flex.footer > div > a)::after{
+nav a::after, a:not(.flex.footer > div > a, div.item-text.main > a.mainbuttom)::after{
     content: " ";
     width: 0%;
     height: 2px;
