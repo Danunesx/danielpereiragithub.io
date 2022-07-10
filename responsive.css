@@ -73,7 +73,17 @@
     }
 
     #Sobre p {
-        font-size: x-small;
+        text-align: justify;
+        margin: 2% 0 6% 0;
+        font-size: 80%;
+    }
+
+    #Sobre div.flexbox.-text > h1 {
+        margin: 0;
+    }
+
+    .heart{
+        visibility: hidden;
     }
 }
 
@@ -84,8 +94,55 @@
     }
 
     .item-text.main {
-        margin-top: 15%;
+        margin-top: 10vh;
         text-align: left;
+    }
+
+    .img--{
+        padding-left: 10%;
+        transform: translate(0px, -50px);
+    }
+
+    .footerbox{
+        padding-left: 10%;
+    }
+
+    .footerbox.logos.b{
+        text-align: center;
+        padding: 5% 0 0 0;
+    }
+
+    .footerbox.links{
+        width: 30%;
+        float: right;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flex.footer > div {
+        flex: 1 1 190px;
+    }
+
+    .titulo{
+        line-height: 30pt;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px 35px 0px 35px;
+    }
+
+    #seta{
+        visibility: hidden;
+    }
+
+    .grid.about-me > .flexbox {
+        height: 385px;
+    }
+
+    .item-text {
+        text-align: center;
+        margin: 0;
     }
 
 }
