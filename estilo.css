@@ -55,12 +55,16 @@ img{
     display: block;
 }
 
+.mp{
+    padding-top: 5%;
+}
+
 #Serviços, #Portifolio, #Contato{
     background-color: #001433;
 }
 
 #Contato{
-    padding: 2% 0 6% 0;
+    padding: 5% 0 6% 0;
 }
 
 #Clientes {
@@ -85,7 +89,6 @@ img{
     flex-wrap: wrap;
     /* max-width: 800px; limita o tamanho do container */ 
     margin: 0 auto;
-    padding-top: 5%;
     align-items: center;
 }
 
@@ -275,7 +278,7 @@ div.buttom > a{
 }
 /* FOOTER */
 footer{
-    padding: 0 0 2% 0;
+    padding: 5% 0 2% 0;
 }
 
 .footer{
