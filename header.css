@@ -24,7 +24,7 @@ nav a{
     position: relative;
 }
 
-a:not(.flex.footer > div > a, div.buttom > a){
+a:not(.flex.footer > div > a, div.buttom > a, .cardb, .wpp){
     padding: 0 0 10px 0;
     font-size: 13pt;
     position: relative;
@@ -39,7 +39,7 @@ a:hover{
     color: #e6e6e6;
 }
 
-nav a::after, a:not(.flex.footer > div > a, div.item-text.main > a.mainbuttom)::after{
+nav a::after, a:not(.flex.footer > div > a, div.item-text.main > a.mainbuttom, .cardb, .wpp)::after{
     content: " ";
     width: 0%;
     height: 2px;
